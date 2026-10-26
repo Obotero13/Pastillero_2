@@ -622,7 +622,7 @@ function exportarResumenPDF(pacienteId) {
       </div>
 
       <div class="pdf-footer">
-        Ficha generada por <strong>El Pastillero</strong> — Control y adherencia médica.
+        Oscar Botero - Ficha generada por <strong>El Pastillero</strong> — Control y adherencia médica.
       </div>
     </div>
   `;

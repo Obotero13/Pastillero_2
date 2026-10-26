@@ -1,0 +1,45 @@
+INSTALACIÓN AI STUDIO:
+
+Para que El Pastillero se instale como una aplicación real (tanto en PC como en el móvil) y funcione sin internet, debe abrirse a través de un servidor con HTTPS (los navegadores bloquean los Service Workers si solo haces doble clic en index.html como archivo local file:///).
+A continuación tienes el paso a paso más sencillo y rápido para tenerlo funcionando en ambos dispositivos:
+Paso 1: Alojar los archivos en Internet (Gratis y en 2 minutos)
+La forma más rápida sin saber programar servidores es usar Netlify Drop o GitHub Pages:
+Opción rápida (Netlify Drop):
+Pon todos los archivos (index.html, app.js, styles.css, layout.css, manifest.json, sw.js y los iconos .png) dentro de una sola carpeta en tu PC.
+Entra en tu navegador a: app.netlify.com/drop.
+Arrastra esa carpeta a la página.
+En 10 segundos te generará un enlace seguro con HTTPS gratuito (ejemplo: https://mi-pastillero.netlify.app).
+(Ese enlace es el que abrirás tanto en el PC como en el móvil).
+Paso 2: Cómo instalar en el PC (Windows, Mac o Linux)
+Puedes instalarlo desde Google Chrome, Microsoft Edge o Brave:
+Abre el enlace de tu app en el navegador.
+En la barra de direcciones (arriba a la derecha, donde se escribe la URL), verás un icono de una pantallita con una flecha hacia abajo (💻 o ⊕):
+En Chrome: Icono "Instalar El Pastillero".
+En Edge: Icono "Aplicación disponible. Instalar El Pastillero".
+Si no ves el icono, abre el menú de los 3 puntos del navegador (arriba a la derecha) y selecciona:
+"Instalar El Pastillero..." o "Guardar y compartir" → "Instalar página como aplicación".
+Haz clic en Instalar.
+🎉 Resultado en PC: Se creará un acceso directo en tu Escritorio y en el menú de Inicio. Se abrirá en una ventana limpia e independiente (sin barra de navegador) y funcionará incluso si desconectas el Wi-Fi.
+Paso 3: Cómo instalar en el Móvil
+En Android (Google Chrome):
+Abre Chrome en tu celular y entra al enlace de tu app.
+Te saldrá un aviso automático en la parte inferior: "Añadir El Pastillero a la pantalla de inicio".
+Si no te sale automáticamente:
+Toca el menú de los 3 puntos (esquina superior derecha).
+Elige "Instalar aplicación" o "Añadir a la pantalla de inicio".
+Toca Instalar.
+En iPhone / iPad (Safari):
+En iOS es obligatorio usar Safari para instalar PWAs:
+Abre Safari y entra al enlace de tu app.
+Toca el botón Compartir (el cuadro con una flecha hacia arriba en la barra inferior).
+Desliza hacia abajo en el menú y selecciona "Añadir a pantalla de inicio" (icono de un cuadrado con un +).
+Pulsa "Añadir" en la esquina superior derecha.
+📱 Resultado en el Móvil: Aparecerá el icono de El Pastillero en tu pantalla de inicio junto a tus demás aplicaciones de WhatsApp o bancos. Al abrirlo, ocupará la pantalla completa, sin barras de Safari/Chrome y guardará todos los datos en la memoria interna del teléfono sin consumir datos móviles.
+Alternativa para probarlo SOLO en el PC (Sin subir a Internet)
+Si solo quieres probarlo localmente en tu ordenador antes de subirlo:
+Si usas Visual Studio Code: instala la extensión Live Server, haz clic derecho sobre index.html y elige "Open with Live Server".
+Si tienes Python instalado: abre una terminal en la carpeta y escribe:
+code
+Bash
+python -m http.server 8000
+Luego abre en Chrome http://localhost:8000 y te saldrá el botón de instalar.
